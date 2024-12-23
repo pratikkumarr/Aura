@@ -1,0 +1,135 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #74ebd5, #acb6e5);
+    color: #333;
+    transition: all 0.3s ease;
+  }
+  
+  header {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  header h1 {
+    font-size: 2.8rem;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+  }
+  
+ 
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+ 
+  .card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    text-align: center;
+    width: 320px;
+  }
+  
+  .card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  input, select, button {
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  
+  button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #388e3c;
+  }
+  
+ 
+  footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+  }
+  
+  footer button {
+    background: white;
+    color: #333;
+  }
+  
+  footer button:hover {
+    background: #4caf50;
+    color: white;
+  }
+
+.dark-mode {
+    background: linear-gradient(to bottom, #1e1e2f, #2a2a3d);
+    color: #e0e0e0;
+  }
+  
+  .dark-mode header {
+    background-color: #24243e;
+    color: #ffffff;
+  }
+  
+  .dark-mode .card {
+    background: #2b2b3b;
+    color: #f0f0f0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  }
+  
+  .dark-mode button {
+    background-color: #44475a;
+    color: #ffffff;
+    border: none;
+  }
+  
+  .dark-mode button:hover {
+    background-color: #6272a4;
+  }
+  
+  .dark-mode footer {
+    background: #24243e;
+    color: #ffffff;
+  }
+  
+  .dark-mode input,
+  .dark-mode select {
+    background: #44475a;
+    color: #ffffff;
+    border: 1px solid #6272a4;
+  }
+  
+  .dark-mode #quote {
+    color: #50fa7b;
+  }
+  
+  .dark-mode a {
+    color: #8be9fd;
+  }
+  
+  

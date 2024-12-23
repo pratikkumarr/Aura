@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aura Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Aura Dashboard</h1>
+    <p>Manage your time and tasks efficiently</p>
+  </header>
+
+  <main>
+    <!-- Live Time -->
+    <section id="live-time" class="card">
+      <h2>Live Time</h2>
+      <p id="time-display">Loading...</p>
+      <label for="time-zone">Time Zone:</label>
+      <select id="time-zone">
+        <option value="Asia/Kolkata">India (IST)</option>
+        <option value="America/New_York">New York (EST)</option>
+        <option value="Europe/London">London (GMT)</option>
+      </select>
+    </section>
+
+    <!-- Timer -->
+    <section id="timer" class="card">
+      <h2>Countdown Timer</h2>
+      <label for="timer-datetime">Set Target Date & Time:</label>
+      <input type="datetime-local" id="timer-datetime">
+      <div class="button-group">
+        <button id="start-timer">Start Countdown</button>
+        <button id="reset-timer">Reset</button>
+      </div>
+      <p id="timer-display">00:00:00</p>
+    </section>
+
+    <!-- Stopwatch -->
+    <section id="stopwatch" class="card">
+      <h2>Stopwatch</h2>
+      <div class="button-group">
+        <button id="start-stopwatch">Start</button>
+        <button id="stop-stopwatch">Stop</button>
+        <button id="reset-stopwatch">Reset</button>
+      </div>
+      <p id="stopwatch-display">0:00</p>
+    </section>
+
+    <!-- Weather -->
+    <section id="weather" class="card">
+      <h2>Weather Update</h2>
+      <input type="text" id="city" placeholder="Enter city">
+      <button id="get-weather">Get Weather</button>
+      <div id="weather-info">
+        <p id="weather-city"></p>
+        <p id="weather-description"></p>
+        <p id="weather-temp"></p>
+      </div>
+    </section>
+
+    <!-- News -->
+    <section id="news" class="card">
+      <h2>Latest News</h2>
+      <button id="fetch-news">Fetch News</button>
+      <ul id="news-list"></ul>
+    </section>
+
+    <!-- Motivational Quotes -->
+    <section id="quotes" class="card">
+      <h2>Motivational Quote</h2>
+      <p id="quote">"The best way to predict the future is to create it." – Peter Drucker</p>
+      <button id="new-quote">New Quote</button>
+    </section>
+  </main>
+
+  <footer>
+    <h3>Theme Customization</h3>
+    <button id="light-theme">Light Mode</button>
+    <button id="dark-theme">Dark Mode</button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
